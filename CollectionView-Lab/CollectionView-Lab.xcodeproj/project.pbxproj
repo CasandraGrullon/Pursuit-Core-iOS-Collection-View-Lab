@@ -68,12 +68,8 @@
 			children = (
 				C646FD9D23CE5BA600AD4D9B /* AppDelegate.swift */,
 				C646FD9F23CE5BA600AD4D9B /* SceneDelegate.swift */,
-				C646FDB523CE611800AD4D9B /* Country.swift */,
 				C646FDBC23CE693F00AD4D9B /* Model */,
-				C646FDB723CE64D900AD4D9B /* CountryAPIClient.swift */,
-				C646FDA123CE5BA600AD4D9B /* CountrySearchViewController.swift */,
-				C646FDB123CE60F100AD4D9B /* CountryCell.swift */,
-				C646FDB323CE610D00AD4D9B /* DetailViewController.swift */,
+				C646FDBD23CE696D00AD4D9B /* ViewControllers */,
 				C646FDA323CE5BA600AD4D9B /* Main.storyboard */,
 				C646FDA623CE5BA800AD4D9B /* Assets.xcassets */,
 				C646FDA823CE5BA800AD4D9B /* LaunchScreen.storyboard */,
@@ -85,8 +81,20 @@
 		C646FDBC23CE693F00AD4D9B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C646FDB723CE64D900AD4D9B /* CountryAPIClient.swift */,
+				C646FDB523CE611800AD4D9B /* Country.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C646FDBD23CE696D00AD4D9B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C646FDA123CE5BA600AD4D9B /* CountrySearchViewController.swift */,
+				C646FDB123CE60F100AD4D9B /* CountryCell.swift */,
+				C646FDB323CE610D00AD4D9B /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
