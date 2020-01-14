@@ -109,10 +109,10 @@
             </objects>
             <point key="canvasLocation" x="592.75362318840587" y="119.86607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="zLc-uE-WSC">
             <objects>
-                <viewController id="6Bv-bk-UFn" sceneMemberID="viewController">
+                <viewController id="6Bv-bk-UFn" customClass="DetailViewController" customModule="CollectionView_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OPG-Ge-Lsn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,12 +137,6 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acv-mz-p2d">
                                 <rect key="frame" x="50" y="357.5" width="71" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E16-Nl-ESf">
-                                <rect key="frame" x="50" y="386.5" width="53" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -177,15 +171,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7g-CL-3kn">
-                                <rect key="frame" x="194" y="386.5" width="200" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="vgv-lF-AJp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Uv5-Yh-B6C">
                                 <rect key="frame" x="0.0" y="459" width="414" height="403"/>
                             </mapView>
@@ -194,7 +179,6 @@
                         <constraints>
                             <constraint firstItem="Olm-57-zcd" firstAttribute="top" secondItem="RLD-qG-56x" secondAttribute="top" constant="8" id="2jH-wf-9VG"/>
                             <constraint firstItem="SOt-3z-YiS" firstAttribute="top" secondItem="oAk-h7-7cj" secondAttribute="bottom" constant="8" id="2ud-jD-aOC"/>
-                            <constraint firstItem="E16-Nl-ESf" firstAttribute="leading" secondItem="RLD-qG-56x" secondAttribute="leading" constant="50" id="2vu-CG-E03"/>
                             <constraint firstItem="RLD-qG-56x" firstAttribute="trailing" secondItem="SOt-3z-YiS" secondAttribute="trailing" constant="20" id="Bfi-aR-KXZ"/>
                             <constraint firstItem="RLD-qG-56x" firstAttribute="trailing" secondItem="1lg-iu-6XP" secondAttribute="trailing" constant="20" id="DXM-Cx-oYk"/>
                             <constraint firstItem="1lg-iu-6XP" firstAttribute="top" secondItem="Olm-57-zcd" secondAttribute="bottom" constant="8" id="Eab-V0-JU0"/>
@@ -206,12 +190,8 @@
                             <constraint firstItem="oFW-pS-1f7" firstAttribute="leading" secondItem="RLD-qG-56x" secondAttribute="leading" constant="50" id="YIw-Tl-Q8q"/>
                             <constraint firstItem="LQ3-xZ-6BB" firstAttribute="leading" secondItem="RLD-qG-56x" secondAttribute="leading" constant="50" id="ZQF-xd-fh0"/>
                             <constraint firstItem="RLD-qG-56x" firstAttribute="bottom" secondItem="Uv5-Yh-B6C" secondAttribute="bottom" id="aYZ-nu-ZzW"/>
-                            <constraint firstItem="J7g-CL-3kn" firstAttribute="centerY" secondItem="E16-Nl-ESf" secondAttribute="centerY" id="afG-2U-cvq"/>
                             <constraint firstItem="1lg-iu-6XP" firstAttribute="height" secondItem="OPG-Ge-Lsn" secondAttribute="height" multiplier="0.15" id="bJz-hL-Um8"/>
                             <constraint firstItem="RLD-qG-56x" firstAttribute="trailing" secondItem="oAk-h7-7cj" secondAttribute="trailing" constant="20" id="c51-jA-qRC"/>
-                            <constraint firstItem="E16-Nl-ESf" firstAttribute="top" secondItem="acv-mz-p2d" secondAttribute="bottom" constant="8" id="cKv-ka-uF0"/>
-                            <constraint firstItem="J7g-CL-3kn" firstAttribute="top" secondItem="SOt-3z-YiS" secondAttribute="bottom" constant="8" id="gGx-0N-M2V"/>
-                            <constraint firstItem="RLD-qG-56x" firstAttribute="trailing" secondItem="J7g-CL-3kn" secondAttribute="trailing" constant="20" id="jRn-kG-ELl"/>
                             <constraint firstItem="LQ3-xZ-6BB" firstAttribute="top" secondItem="oFW-pS-1f7" secondAttribute="bottom" constant="8" id="jxX-6P-RlI"/>
                             <constraint firstItem="Olm-57-zcd" firstAttribute="leading" secondItem="RLD-qG-56x" secondAttribute="leading" constant="8" id="mTW-VE-8kd"/>
                             <constraint firstItem="RLD-qG-56x" firstAttribute="trailing" secondItem="tQZ-vc-aDD" secondAttribute="trailing" constant="20" id="oqE-IN-Ks4"/>
@@ -226,6 +206,14 @@
                         <viewLayoutGuide key="safeArea" id="RLD-qG-56x"/>
                     </view>
                     <navigationItem key="navigationItem" id="ya8-72-5Yi"/>
+                    <connections>
+                        <outlet property="capitalLabel" destination="tQZ-vc-aDD" id="ZMW-MV-vqP"/>
+                        <outlet property="countryName" destination="Olm-57-zcd" id="Z3t-qL-IL0"/>
+                        <outlet property="currencyLabel" destination="SOt-3z-YiS" id="zeT-gM-m4l"/>
+                        <outlet property="flagImage" destination="1lg-iu-6XP" id="jAR-gs-zCp"/>
+                        <outlet property="map" destination="Uv5-Yh-B6C" id="kBa-Gw-OIG"/>
+                        <outlet property="populationLabel" destination="oAk-h7-7cj" id="XCB-j5-mNT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6BB-GT-8Gg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

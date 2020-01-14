@@ -44,6 +44,12 @@ class CountrySearchViewController: UIViewController {
             }
         }
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailVC = segue.destination as? DetailViewController, let indexPath = collectionView.indexPathsForSelectedItems!.first else {
+            fatalError("bad segue")
+        }
+        detailVC.country = countries[indexPath.row]
+    }
 
 }
 
