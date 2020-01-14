@@ -14,7 +14,9 @@ class CountrySearchViewController: UIViewController {
     
     var countries = [Country]() {
         didSet{
-            self.collectionView.reloadData()
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
         }
     }
     
@@ -29,6 +31,7 @@ class CountrySearchViewController: UIViewController {
         searchBar.delegate = self
         collectionView.dataSource = self
         collectionView.delegate = self
+        loadData(for: "united")
     }
 
     func loadData(for search: String) {
@@ -67,6 +70,19 @@ extension CountrySearchViewController: UICollectionViewDataSource {
 }
 extension CountrySearchViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        <#code#>
+        let itemSpacing: CGFloat = 1
+        let maxWidth = UIScreen.main.bounds.size.width
+        let numberOfItems: CGFloat = 1
+        let totalSpace: CGFloat = numberOfItems * itemSpacing
+        let itemWidth: CGFloat = (maxWidth - totalSpace) / numberOfItems
+        
+        
+        return CGSize(width: itemWidth, height: itemWidth)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 20, left: 1, bottom: 20, right: 1)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 1
     }
 }
